@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from './Navbar';
+import TodoList from './TodoList';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <h1>Meu Primeiro App</h1>
+      <TodoList />
     </div>
   );
 }
