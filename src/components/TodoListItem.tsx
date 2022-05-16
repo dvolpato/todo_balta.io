@@ -6,6 +6,10 @@ interface TodoListItemProps {
 }
 
 function TodoListItem(props: TodoListItemProps) {
+  function onRemove (todo: Todo) {
+    console.log(todo);
+  }
+
   function handleChange(event: any) {
     console.log("Changed");
   }
@@ -28,7 +32,9 @@ function TodoListItem(props: TodoListItemProps) {
       <td className="uk-width-auto">
         <button
           className="uk-icon-button uk-button-danger"
-          uk-icon="trash"></button>
+          uk-icon="trash"
+          onClick={() => onRemove(props.todo)}>
+        </button>
       </td>
     </tr>
   );
