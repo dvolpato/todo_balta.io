@@ -1,6 +1,11 @@
 import React from "react";
+import { Todo } from "../models/Todo";
 
-function TodoListItem() {
+interface TodoListItemProps {
+  todo: Todo;
+}
+
+function TodoListItem(props: TodoListItemProps) {
   return (
     <tr className="uk-animation-slide-bottom-medium">
       <td className="uk-width-auto">
@@ -9,7 +14,7 @@ function TodoListItem() {
         </label>
       </td>
       <td className="uk-width-expand">
-        Item
+        {props.todo.title}
       </td>
       <td className="uk-width-auto">
         <button

@@ -21,7 +21,7 @@ function TodoList() {
       <tbody>
         {
           todos?.map(
-            todo => (<TodoListItem key={todo.id} />)
+            todo => (<TodoListItem key={todo.id} todo={todo} />)
           )
         }
       </tbody>
