@@ -6,11 +6,20 @@ interface TodoListItemProps {
 }
 
 function TodoListItem(props: TodoListItemProps) {
+  function handleChange(event: any) {
+    console.log("Changed");
+  }
+
   return (
     <tr className="uk-animation-slide-bottom-medium">
       <td className="uk-width-auto">
         <label>
-          <input className="uk-checkbox" type="checkbox" />
+          <input
+            className="uk-checkbox"
+            type="checkbox"
+            checked={props.todo.done}
+            onChange={handleChange}
+          />
         </label>
       </td>
       <td className="uk-width-expand">
