@@ -4,8 +4,6 @@ import TodoListItem from "./TodoListItem";
 
 function TodoList() {
   const todos: Todo[] = [
-    { id: 1, title: "Ir ao supermercado", done: true },
-    { id: 2, title: "Ir a academia", done: false },
   ];
 
   return (
