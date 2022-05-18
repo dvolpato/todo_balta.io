@@ -19,10 +19,10 @@ function TodoProvider(props: any) {
     console.log("Add: " + title);
   }
   function removeTodo(todo: Todo) {
-    console.log("Remove: " + todo);
+    console.log("Remove: " + todo.title);
   }
   function toggle(todo: Todo) {
-    console.log("Toogle: " + todo);
+    console.log("Toogle: " + todo.title);
 
   }
 
